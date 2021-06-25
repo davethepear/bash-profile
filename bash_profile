@@ -9,6 +9,7 @@ UPTIME=`printf "%d days, %02dh%02dm%02ds" "$days" "$hours" "$mins" "$secs"`
 read one five fifteen rest < /proc/loadavg
 
 # Three external scripts were used. They either should be put in your home /scripts, or changed to reflect your setup.
+# Line 22 should be changed to your system's drive location. You will need to edit the external scripts as well.
 echo "$(tput setaf 2)
      $(tput setaf 7)---System Info---$(tput setaf 2)
 Server Name........: $(tput setaf 3)`hostname`$(tput setaf 2)
@@ -24,8 +25,8 @@ Information you want people to see upon login... or stuff from OLD STUFF. "u" is
 Type u to update the system... type exit to leave
 $(tput sgr0)"
 
-### OLD STUFF ###
-# These can be placed anywhere, just uncomment and move them!
+### MORE STUFF ###
+# These can be placed anywhere, just uncomment and move them! It works. Change the hard drives to match your setup.
 
 # `date +"%A, %e %B %Y, %r"`
 # `uname -srmo`$(tput setaf 2)
