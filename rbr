@@ -1,0 +1,5 @@
+if [ -f /var/run/reboot-required ]; then
+  echo 'yes'
+else
+  echo 'no'
+fi
